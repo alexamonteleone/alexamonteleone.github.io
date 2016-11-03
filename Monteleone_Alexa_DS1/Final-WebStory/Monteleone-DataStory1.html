@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>The Lowest Voter Turnout in 7 Decades</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css"> ${demo.css}
+		</style>
+
+    </head>
+    <!--BAR CHART--> 
+<body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+<script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
+
+<!--START BAR CHART-->
+    <script type="text/javascript"> $(function () {
+        $('#chart-container').highcharts({
+        credits: {
+            enabled: false
+        },
+        exporting: { 
+            enabled: false 
+        },
+        chart: {
+                type: 'bar',
+                 style: {
+               fontFamily: 'Helvetica Neue',
+                        }
+        },
+        
+
+        title: {
+                text: 'Reasons not voting in the U.S. presidential elections in 2014',
+                align: 'center',
+                        
+                style: {
+                color: '#CE5A57',
+                fontWeight:500,
+                fontSize:16},
+
+                },       
+
+        subtitle: {
+            text: 'Source: <a href="https://www.census.gov/hhes/www/socdemo/voting/publications/p20/2012/tables.html">Census.gov</a>',
+
+            style: {
+                color: '#666666'},
+
+
+        },
+        xAxis: {
+            categories: ['Too busy', 'Not interested', 'Illness or disability', 'Did not like candidates or campaign issues', 'Other reason', 'Out of town', 'Registration problems', 'Forgot to vote', 'Transportation problems', 'Dont know or refused', 'Inconvenient polling place', 'Bad weather conditions'],
+            
+            style: {
+                color: 'red'},
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Percent of voting-eligible population (VEP)',
+                align: 'high',
+        },
+
+        labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: false
+                }
+            }
+        },
+        legend: {
+                enabled: false
+        },
+        
+        series: [{
+            name: 'Percent VEP',
+            data: [18.9, 15.7, 14, 12.7, 11.1, 8.6, 5.5, 3.9, 3.3, 3, 2.7, 0.8],
+            color:'#CE5A57'
+
+        }]
+    });
+});
+	</script>
+<!--END BAR CHART-->
+
+<style>
+    body {
+        width:90%;
+        margin:0 auto;
+        color:#444C5C;
+    }
+
+    h1 {
+        font-family:"Franklin Bold",Helvetica, Arial, sans-serif;
+        font-size:2.3em;
+        font-weight:600;
+        color: #444C5C;
+        padding-top: : 20%;
+        padding-bottom: : 20%;
+        word-spacing: 1.5px;
+
+    }
+
+    h2 {
+        font-family:"Franklin Bold",Helvetica, Arial, sans-serif;
+        font-size:1.5em;
+        font-weight:300;
+        color: #444C5C;
+        border-bottom:1.0px solid #666666;
+        margin-bottom: 2.5%;
+        padding-bottom: 1%;
+    }
+
+    h3 {
+        font-family:"Franklin Bold",Helvetica, Arial, sans-serif;
+        text-align: left;
+        color: black;
+        font-weight:300;
+        font-size: 1.4em;
+    }
+
+
+    p {
+        font-family:"Franklin Bold",Helvetica, Arial, sans-serif;
+        font-size: 1.0em;
+        line-height:1.5em;
+        word-spacing: 0.5px;
+        margin-top: -.5%
+    }
+
+.one {
+    width:100%;
+    }
+
+.two {
+    }
+
+
+.three {
+    margin-top:20px;
+    text-align: center;
+    }
+
+    .three img {
+        width:70%;
+    }
+
+    .three-head {
+        text-align: left;
+        font-family:"Franklin Bold",Helvetica, Arial, sans-serif;
+      
+    }
+
+.four {
+    margin-top: 20px;
+    text-align: center;
+}
+
+    .four img {
+        width:70%;
+    }
+
+ .five {
+ 	width:100%;
+    margin-top: 2%;
+ }
+
+.left {
+    width:50%;
+    float:left;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.0em;
+    line-height:2em;
+    word-spacing: 0.5px;
+    color: #444C5C;
+}
+
+.right {
+    width:50%;
+    float:left;
+    text-align:center;
+}
+
+.banner {
+    width:100%;
+}
+
+.caption {
+	text-align: center;
+	font-family:"Franklin Bold",Helvetica, Arial, sans-serif;
+     font-size: .9em;
+     line-height:1.5em;
+     word-spacing: 0.5px;
+		width: 100%;
+}
+
+.info {
+    width:65%;
+}
+
+.clear {
+    clear:both;
+}
+
+</style>
+
+        <div id="container">
+            <h1>The Lowest Voter Turnout in 7 Decades</h1>
+            <h2>A closer look at voter registration methods and voter turnout during the 2014 midterm election.</h2>
+            <img class="banner" src="https://p931z2nb6eo1jytzj2ufrzyoiz-wpengine.netdna-ssl.com/news/wp-content/uploads/sites/10/2015/02/RS12589_iStock_000005814659_Large-1440x957.jpg">
+            <div class="caption"><p>2014 set new records in low voter turnout for California during the midterm election. (Daniel Sofer/hermosawave.net)</p></div>
+
+           <!--START FIRST BIG BOX-->
+
+            <div class="one">
+            <br>
+                <div class="left">
+                <h3>By: Alexa Monteleone</h3>
+                <p>During the 2014 midterm election, less than half of the voting-eligible population did not vote, and not a single state broke 60 percent voter turnout. Overall, the average national turnout was 36.3 percent. According to the US Census, the main reasons people did not vote were due to lack of interest, busy schedules, illness or disability, or dislike of candidate or campaign.</p>
+                <p>There are several ways to increase voter turnout by making the registration process easier and more convenient for voters. A trend that has continued to show higher rates of voter participation is states with Election Day Registration (EDR). Election Day registration warrants citizens the right to register or update their voter registration at the polls or at their local election office on Election Day and then cast their ballot.</p>
+
+                </div>
+
+                <div class="right">
+                    <div id="chart-container"></div>
+                </div>
+            </div>
+
+            <!--END FIRST BIG BOX-->
+
+            <div class="clear"></div> <!--PREVENTS CHARTS FROM POPPING UP INTO OTHER CONTENT-->
+
+            <!--START SECOND BIG BOX-->
+            <div class="two">
+                <h2>States With Election Day Registration</h2>
+            </div>
+            <!--END SECOND BIG BOX-->
+
+            <div class="clear"></div> <!--PREVENTS CHARTS FROM POPPING UP INTO OTHER CONTENT-->
+
+
+            <!--START THIRD BIG BOX-->
+            <div class="three">
+                <img src="MapScreen-01.png"></img>
+                <br><br><br>
+                    <div class="three-head">
+                    <p>States with Election Day registration had an average voter turnout of 48 percent in the 2014 midterm election, which is 12 points higher than the turnout in states without Election Day registration. Even now in 2016, only 13 states plus the District of Columbia offer Election Day registration.</p>
+                    <p>There are multiple benefits to Election Day Registration such as increased voter turnout, eliminates registration deadlines, and greatly reduces the need for provisional balloting. However, there have been critiques of EDR that it encourages voters who are ill informed and/or ill-prepared voters to participate in elections.</p>
+                    <p>Online voter registration is another method to increase voter participation. In 2014, 24 states have implemented or passed legislation to enact Online Voter Registration (OVR). Presently, 33 states have the ability to register to vote online. </p>
+                    <p>More states across the country are increasingly adopting online voter registration to reduce costs, enhance government efficiency and build more complete and accurate voter lists. More states are open to this method of registration because reduces the reliance of paper in the registration process, it is more cost efficient and it is more accessible. </p>
+                    <h2>States With Online Voter Registration</h2></div>
+                	
+            </div>
+            <!--END THIRD BIG BOX-->
+
+            <!--START FOURTH BIG BOX-->
+            <div class="four">
+                <img src="MapScreen-02.png"></img>
+           
+                
+            </div>
+            <!--END FOURTH BIG BOX-->
+
+            <!--Start FIFTH BIG BOX-->
+            <div class="five">
+            <div class="left">
+                <br><p>In the 2014 midterm election, Maine, Wisconsin and Colorado had the highest voter turnout rates. All three states have also enacted Election Day registration. Whereas the three states with the lowest turnout, Indiana, New York and Texas do not have Election Day registration legislation passed. States with EDR on average have higher turnout rates than states without EDR. </p>
+                <p>
+				Maine and Wisconsin do not have online voter registration implemented even though they have higher turnout rates. And states with lowest voter turnout for the 2014 midterm election, such as New York and Indiana do have online voter registration implemented. Online voter registration may be a more efficient way to get people to register to vote, but Election Day registration is more effective in increasing voter turnout.
+				</p>
+
+                </div>
+
+                <div class="right"><br>
+                    <img class="info" src="INFOGRAPHIC.PNG">
+                </div>
+            </div>
+
+
+            
+        </div>
+    </body>
+</html>
