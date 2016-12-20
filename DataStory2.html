@@ -1,0 +1,887 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Election Outcome Pennsylvania</title>
+		<!--Java Script-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+    <!---CSS-->
+
+    <style>
+
+    body {
+        width:90%;
+        margin:0 auto;
+        color:#444C5C;
+    	}
+
+    h1 {
+        font-family: "Chronicle Display","Times Roman","Times New Roman",Georgia,serif;
+        font-size: 55px;
+        -webkit-font-smoothing: antialiased;
+         color: #444;
+         font-weight: 300;
+         text-align: center;
+         
+
+    }
+
+    h2 {
+            font-family: "Whitney SSm","Helvetica Neue",Helvetica,Arial,sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 12px;
+            font-weight: 500;
+            text-align: center;
+            margin-top:-20px;
+    }
+
+    h3 {
+            font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+            letter-spacing: 0;
+            font-weight: 400;
+            font-size: 14px;
+            color: #989899;
+            text-align: center;
+      }
+
+    h4 {
+        font-family: "Chronicle Display","Times Roman","Times New Roman",Georgia,serif;
+        font-size: 32px;
+        -webkit-font-smoothing: antialiased;
+         color: #444;
+         font-weight: 300;
+         text-align: center;
+        border-bottom:1.5px dotted #666666;
+        margin-bottom: 1%;
+        }
+
+
+    p {
+        font-family:"Lato",Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        line-height:1.5em;
+        word-spacing: 0.5px;
+        margin-top: -.5%
+        font-weight:300;
+        color: #444;
+    } 
+
+    .left {
+        width:50%;
+        float:left;
+        font-family:"Lato",Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height:1.5em;
+        word-spacing: 0.5px;
+        margin-top: -.5%
+        font-weight:300;
+        color: #444;
+        margin-top:-5px;
+    }
+
+    .right {
+        width:50%;
+        float:left;
+        text-align:center;
+        margin-top:-5px;
+    }
+
+
+
+        #container {
+            height: 600px; 
+            min-width: 310px; 
+            max-width: 700px; 
+            margin: 0 auto; 
+            margin-top:-15px;
+        }
+
+        .loading {
+            margin-top: -10em;
+            text-align: center;
+            color: gray;
+        }
+
+
+        .left {
+          width:50%;
+          float:left;
+        }
+
+        .right {
+          width:50%;
+          float:left;
+          text-align: center;
+      }
+
+     .chart {
+   		 width:90%;
+			}
+
+	.clear {
+    clear:both;
+			}
+
+  .snackable {
+    margin-top: -50px;
+  }
+    </style>
+
+		<script type="text/javascript">
+
+/*2008*/
+	$(function() {
+
+  var data = [{
+    "hc-key": "us-pa-015",
+    "value": .59
+  }, {
+    "hc-key": "us-pa-117",
+    "value": .64
+  }, {
+    "hc-key": "us-pa-027",
+    "value": .44
+  }, {
+    "hc-key": "us-pa-035",
+    "value": .51
+  }, {
+    "hc-key": "us-pa-061",
+    "value": .64
+  }, {
+    "hc-key": "us-pa-009",
+    "value": .73
+  }, {
+    "hc-key": "us-pa-075",
+    "value": .59
+  }, {
+    "hc-key": "us-pa-029",
+    "value": .45
+  }, {
+    "hc-key": "us-pa-011",
+    "value": .45
+  }, {
+    "hc-key": "us-pa-083",
+    "value": .59
+  }, {
+    "hc-key": "us-pa-047",
+    "value": .48
+  }, {
+    "hc-key": "us-pa-005",
+    "value": .62
+  }, {
+    "hc-key": "us-pa-019",
+    "value": .64
+  }, {
+    "hc-key": "us-pa-007",
+    "value": .52
+  }, {
+    "hc-key": "us-pa-067",
+    "value": .68
+  }, {
+    "hc-key": "us-pa-099",
+    "value": .67
+  }, {
+    "hc-key": "us-pa-053",
+    "value": .57
+  }, {
+    "hc-key": "us-pa-123",
+    "value": .53
+  }, {
+    "hc-key": "us-pa-121",
+    "value": .60
+  }, {
+    "hc-key": "us-pa-033",
+    "value": .56
+  }, {
+    "hc-key": "us-pa-063",
+    "value": .54
+  }, {
+    "hc-key": "us-pa-107",
+    "value": .54
+  }, {
+    "hc-key": "us-pa-079",
+    "value": .46
+  }, {
+    "hc-key": "us-pa-055",
+    "value": .66
+  }, {
+    "hc-key": "us-pa-001",
+    "value": .60
+  }, {
+    "hc-key": "us-pa-089",
+    "value": .41
+  }, {
+    "hc-key": "us-pa-069",
+    "value": .37
+  }, {
+    "hc-key": "us-pa-093",
+    "value": .58
+  }, {
+    "hc-key": "us-pa-081",
+    "value": .62
+  }, {
+    "hc-key": "us-pa-095",
+    "value": .44
+  }, {
+    "hc-key": "us-pa-025",
+    "value": .49
+  }, {
+    "hc-key": "us-pa-065",
+    "value": .65
+  }, {
+    "hc-key": "us-pa-003",
+    "value": .42
+  }, {
+    "hc-key": "us-pa-129",
+    "value": .58
+  }, {
+    "hc-key": "us-pa-021",
+    "value": .49
+  }, {
+    "hc-key": "us-pa-013",
+    "value": .62
+  },{
+    "hc-key": "us-pa-039",
+    "value": .55
+  }, {
+    "hc-key": "us-pa-023",
+    "value": .61
+  }, {
+    "hc-key": "us-pa-097",
+    "value": .57
+  }, {
+    "hc-key": "us-pa-043",
+    "value": .46
+  }, {
+    "hc-key": "us-pa-077",
+    "value": .42
+  }, {
+    "hc-key": "us-pa-091",
+    "value": .40
+  }, {
+    "hc-key": "us-pa-131",
+    "value": .54
+  }, {
+    "hc-key": "us-pa-113",
+    "value": .60
+  }, {
+    "hc-key": "us-pa-037",
+    "value": .52
+  }, {
+    "hc-key": "us-pa-045",
+    "value": .39
+  }, {
+    "hc-key": "us-pa-119",
+    "value": .57
+  }, {
+    "hc-key": "us-pa-087",
+    "value": .67
+  }, {
+    "hc-key": "us-pa-031",
+    "value": .61
+  }, {
+    "hc-key": "us-pa-085",
+    "value": .50
+  }, {
+    "hc-key": "us-pa-071",
+    "value": .56
+  }, {
+    "hc-key": "us-pa-049",
+    "value": .40
+  }, {
+    "hc-key": "us-pa-041",
+    "value": .57
+  }, {
+    "hc-key": "us-pa-127",
+    "value": .56
+  }, {
+    "hc-key": "us-pa-017",
+    "value": .46
+  }, {
+    "hc-key": "us-pa-059",
+    "value": .50
+  }, {
+    "hc-key": "us-pa-051",
+    "value": .50
+  }, {
+    "hc-key": "us-pa-101",
+    "value": .16
+  }, {
+    "hc-key": "us-pa-103",
+    "value": .52
+  }, {
+    "hc-key": "us-pa-115",
+    "value": .56
+  }, {
+    "hc-key": "us-pa-125",
+    "value": .52
+  }, {
+    "hc-key": "us-pa-105",
+    "value": .69
+  }, {
+    "hc-key": "us-pa-109",
+    "value": .65
+  }, {
+    "hc-key": "us-pa-111",
+    "value": .63
+  }, {
+    "hc-key": "us-pa-057",
+    "value": .75
+  }, {
+    "hc-key": "us-pa-073",
+    "value": .53
+  }, {
+    "hc-key": "us-pa-133",
+    "value": .57
+  }];
+
+  // Initiate the map
+  $('#PA-county-map-2008').highcharts('Map', {
+
+    title: {
+      text: ''
+
+    },
+
+
+    mapNavigation: {
+      enabled: false,
+      buttonOptions: {
+        verticalAlign: 'bottom'
+      }
+    },
+
+    colorAxis: {
+      min:.16,
+      max: .75,
+
+      minColor:"#0B65FF",
+      maxColor:"#C41E01",
+    },
+
+     credits: {
+      enabled: false
+    },
+    
+    legend: {
+      enabled: false
+    },
+
+    series: [{
+      data: data,
+      mapData: Highcharts.maps['countries/us/us-pa-all'],
+      joinBy: 'hc-key',
+      name: 'Percent voted for McCain',
+      states: {
+        hover: {
+          color: 'white'
+        }
+      },
+
+
+      dataLabels: {
+        enabled: false,
+        format: '{point.name}'
+      }
+    }]
+  });
+});
+
+/*2016*/
+  $(function() {
+
+  var data = [{
+    "hc-key": "us-pa-015",
+    "value": .74
+  }, {
+    "hc-key": "us-pa-117",
+    "value": .78
+  }, {
+    "hc-key": "us-pa-027",
+    "value": .49
+  }, {
+    "hc-key": "us-pa-035",
+    "value": .68
+  }, {
+    "hc-key": "us-pa-061",
+    "value": .76
+  }, {
+    "hc-key": "us-pa-009",
+    "value": .84
+  }, {
+    "hc-key": "us-pa-075",
+    "value": .68
+  }, {
+    "hc-key": "us-pa-029",
+    "value": .45
+  }, {
+    "hc-key": "us-pa-011",
+    "value": .55
+  }, {
+    "hc-key": "us-pa-083",
+    "value": .75
+  }, {
+    "hc-key": "us-pa-047",
+    "value": .73
+  }, {
+    "hc-key": "us-pa-005",
+    "value": .77
+  }, {
+    "hc-key": "us-pa-019",
+    "value": .70
+  }, {
+    "hc-key": "us-pa-007",
+    "value": .6
+  }, {
+    "hc-key": "us-pa-067",
+    "value": .82
+  }, {
+    "hc-key": "us-pa-099",
+    "value": .78
+  }, {
+    "hc-key": "us-pa-053",
+    "value": .73
+  }, {
+    "hc-key": "us-pa-123",
+    "value": .71
+  }, {
+    "hc-key": "us-pa-121",
+    "value": .72
+  }, {
+    "hc-key": "us-pa-033",
+    "value": .76
+  }, {
+    "hc-key": "us-pa-063",
+    "value": .68
+  }, {
+    "hc-key": "us-pa-107",
+    "value": .72
+  }, {
+    "hc-key": "us-pa-079",
+    "value": .60
+  }, {
+    "hc-key": "us-pa-055",
+    "value": .74
+  }, {
+    "hc-key": "us-pa-001",
+    "value": .69
+  }, {
+    "hc-key": "us-pa-089",
+    "value": .5
+  }, {
+    "hc-key": "us-pa-069",
+    "value": .48
+  }, {
+    "hc-key": "us-pa-093",
+    "value": .65
+  }, {
+    "hc-key": "us-pa-081",
+    "value": .73
+  }, {
+    "hc-key": "us-pa-095",
+    "value": .52
+  }, {
+    "hc-key": "us-pa-025",
+    "value": .68
+  }, {
+    "hc-key": "us-pa-065",
+    "value": .81
+  }, {
+    "hc-key": "us-pa-003",
+    "value": .41
+  }, {
+    "hc-key": "us-pa-129",
+    "value": .66
+  }, {
+    "hc-key": "us-pa-021",
+    "value": .69
+  }, {
+    "hc-key": "us-pa-013",
+    "value": .74
+  }, {
+    "hc-key": "us-pa-039",
+    "value": .70
+  }, {
+    "hc-key": "us-pa-023",
+    "value": .76
+  }, {
+    "hc-key": "us-pa-097",
+    "value": .73
+  }, {
+    "hc-key": "us-pa-043",
+    "value": .49
+  }, {
+    "hc-key": "us-pa-077",
+    "value": .48
+  }, {
+    "hc-key": "us-pa-091",
+    "value": .39
+  }, {
+    "hc-key": "us-pa-131",
+    "value": .7
+  }, {
+    "hc-key": "us-pa-113",
+    "value": .75
+  }, {
+    "hc-key": "us-pa-037",
+    "value": .67
+  }, {
+    "hc-key": "us-pa-045",
+    "value": .39
+  }, {
+    "hc-key": "us-pa-119",
+    "value": .63
+  }, {
+    "hc-key": "us-pa-087",
+    "value": .8
+  }, {
+    "hc-key": "us-pa-031",
+    "value": .75
+  }, {
+    "hc-key": "us-pa-085",
+    "value": .63
+  }, {
+    "hc-key": "us-pa-071",
+    "value": .6
+  }, {
+    "hc-key": "us-pa-049",
+    "value": .51
+  }, {
+    "hc-key": "us-pa-041",
+    "value": .60
+  }, {
+    "hc-key": "us-pa-127",
+    "value": .7
+  }, {
+    "hc-key": "us-pa-017",
+    "value": .5
+  }, {
+    "hc-key": "us-pa-059",
+    "value": .71
+  }, {
+    "hc-key": "us-pa-051",
+    "value": .66
+  }, {
+    "hc-key": "us-pa-101",
+    "value": .17
+  }, {
+    "hc-key": "us-pa-103",
+    "value": .63
+  }, {
+    "hc-key": "us-pa-115",
+    "value": .72
+  }, {
+    "hc-key": "us-pa-125",
+    "value": .63
+  }, {
+    "hc-key": "us-pa-105",
+    "value": .83
+  }, {
+    "hc-key": "us-pa-109",
+    "value": .75
+  }, {
+    "hc-key": "us-pa-111",
+    "value": .79
+  }, {
+    "hc-key": "us-pa-057",
+    "value": .86
+  }, {
+    "hc-key": "us-pa-073",
+    "value": .65
+  }, {
+    "hc-key": "us-pa-133",
+    "value": .65
+  }];
+
+  // Initiate the map
+  $('#PA-county-map-2016').highcharts('Map', {
+
+    title: {
+      text: ''
+    },
+
+    mapNavigation: {
+      enabled: false,
+      buttonOptions: {
+        verticalAlign: 'bottom'
+      }
+    },
+
+    colorAxis: {
+      min:.17,
+      max: .57,
+
+      minColor:"#0B65FF",
+      maxColor:"#C40401",
+    },
+
+     credits: {
+      enabled: false
+    },
+
+    legend: {
+      enabled: false
+    },
+
+    series: [{
+      data: data,
+      mapData: Highcharts.maps['countries/us/us-pa-all'],
+      joinBy: 'hc-key',
+      name: 'Percent voted for Trump',
+      states: {
+        hover: {
+          color: 'white'
+        }
+      },
+
+
+      dataLabels: {
+        enabled: false,
+        format: '{point.name}'
+      }
+    }]
+  });
+});
+
+/*NATIONAL DATA*/
+
+$(function () {
+
+    // Load the data from a Google Spreadsheet
+    // https://docs.google.com/spreadsheets/d/1vyJAu6j6G7TAgTt8acRGWDzuEsuBI0bZxHU2_RkM0Vc/edit?usp=sharing
+    Highcharts.data({
+
+        googleSpreadsheetKey: '1vyJAu6j6G7TAgTt8acRGWDzuEsuBI0bZxHU2_RkM0Vc',
+
+        // custom handler for columns
+        parsed: function (columns) {
+
+            /**
+             * Event handler for clicking points. Use jQuery UI to pop up
+             * a pie chart showing the details for each state.
+             */
+            function pointClick() {
+                var row = this.options.row,
+                    $div = $('<div></div>')
+                        .dialog({
+                            title: this.name,
+                            width: 400,
+                            height: 300
+                        });
+
+                window.chart = new Highcharts.Chart({
+                    chart: {
+                        renderTo: $div[0],
+                        type: 'pie',
+                        width: 370,
+                        height: 240
+                    },
+                    title: {
+                        text: null
+                    },
+                    credits: {
+                      enabled: false
+                    },
+                    series: [{
+                        name: 'Votes',
+                        data: [{
+                            name: 'Clinton',
+                            color: '#0200D0',
+                            y: parseInt(columns[3][row],10)
+                        }, {
+                            name: 'Trump',
+                            color: '#C40401',
+                            y: parseInt(columns[2][row],10)
+                        }],
+                        dataLabels: {
+                            format: '<b>{point.name}</b> {point.percentage:.1f}%'
+                        }
+                    }]
+                });
+            }
+
+            // Make the columns easier to read
+
+            var keys = columns[0],
+                names = columns[1],
+                percent = columns[4],
+                // Build the chart options
+                options = {
+                    chart: {  
+                        renderTo: 'container',
+                        type: 'map',
+                        borderWidth: 0
+                    },
+
+                    title: {
+                        text: ''
+                    },
+                    
+                    legend: {
+                        enabled: false,
+                    },
+
+                    mapNavigation: {
+                        enabled: false,
+                    },
+
+                    credits: {
+                      enabled: false
+                   },
+
+                    colorAxis: {
+
+                        dataClasses: [{
+                            from: -100,
+                            to: 0,
+                            color: '#C40401',
+                            name: 'Trump'
+                        }, {
+                            from: 0,
+                            to: 100,
+                            color: '#0200D0',
+                            name: 'Clinton'
+                        }]
+                    },
+
+                    series: [{
+                        data: [],
+                        mapData: Highcharts.maps['countries/us/us-all'],
+                        joinBy: 'postal-code',
+                        dataLabels: {
+                            enabled: true,
+                            color: '#FFFFFF',
+                            format: '{point.postal-code}',
+                            style: {
+                                textTransform: 'uppercase'
+                            }
+                        },
+                        name: 'Democrats margin',
+                        point: {
+                            events: {
+                                click: pointClick
+                            }
+                        },
+                        tooltip: {
+                            ySuffix: ' %'
+                        },
+                        cursor: 'pointer'
+                    }, {
+                        name: 'Separators',
+                        type: 'mapline',
+                        data: Highcharts.geojson(Highcharts.maps['countries/us/us-all'], 'mapline'),
+                        color: 'silver',
+                        showInLegend: false,
+                        enableMouseTracking: false
+                    }]
+                };
+            keys = keys.map(function (key) {
+                return key.toUpperCase();
+            });
+            Highcharts.each(options.series[0].mapData.features, function (mapPoint) {
+                if (mapPoint.properties['postal-code']) {
+                    var postalCode = mapPoint.properties['postal-code'],
+                        i = $.inArray(postalCode, keys);
+                    options.series[0].data.push(Highcharts.extend({
+                        value: parseFloat(percent[i]),
+                        name: names[i],
+                        'postal-code': postalCode,
+                        row: i
+                    }, mapPoint));
+                }
+            });
+
+            // Initiate the chart
+
+            window.chart = new Highcharts.Map(options);
+        },
+
+        error: function () {
+            $('#container').html('<div class="loading">' +
+                '<i class="icon-frown icon-large"></i> ' +
+                '<p>Error loading data from Google Spreadsheets</p>' +
+                '</div>');
+        }
+    });
+});
+
+</script>
+
+
+</style>
+
+<!---HTML-->
+
+</head>
+	<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
+
+		<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+		<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com/mapdata/countries/us/us-pa-all.js"></script>
+       
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+
+<!---BODY CONTENT FOR STORY HERE-->
+
+  <h1>Election Results 2016</h1>
+  <h2>An analysis on the Keystone State.</h2>
+  <h3>By: Alexa Monteleone</h3>
+       <div id="container">
+          <div class="loading">
+             <i class="icon-spinner icon-spin icon-large"></i>
+                Loading data from Google Spreadsheets...
+          </div>
+      </div>
+
+     <p>Hillary Clinton received more popular votes than any past white male president in history, but fell short in the Electoral College. The Former Secretary of State Hillary Clinton has gained at least 65,527,625 votes in the 2016 presidential election, over 2.6 million more than the president-elect Donald Trump, who has received at least 62,851,436 votes. The only president to receive more popular votes than Clinton in 2016 was President Obama in 2008.</p>
+
+    <p>Clinton’s two percent of the popular vote majority over Trump did not lead her to success in 2016 as the first female president of the United States. Clintons lost six states in the 2016 election compared to 2012 and eight states compared to 2008, securing only 232 total electoral votes. President-elect Donald Trump garnered 306 electoral votes.</p>
+
+  <p>If Clinton had won both Florida and Pennsylvania or Ohio and Pennsylvania, she would have secured the nomination. All three states were considered swing states in 2016. A swing state is a US state where the two major political parties have similar levels of support among voters, viewed as important in determining the overall result of a presidential election.</p>
+
+  <p>Pennsylvania had six Democrat wins and four Republican wins in the last ten gubernatorial elections. Pennsylvania has voted Democrat in every past election since 1992.</p>
+
+  <p>In 2016, Trump successfully gained the support from the individuals who were once called Reagan Democrats. The Reagan Democrats are labeled as the mostly white, working-class voters in counties such as Johnstown, Shamokin, Greensburg and multiple smaller counties that appealed to Trump’s candidacy. </p>
+
+  <p>In 2008, Obama secured about 20 percent more voters than Clinton did in 2016 causing Pennsylvania to go red. Hillary Clinton canvassers had mentioned they spent less time in the counties secured by Obama in 2008 because they assumed those counties would continue to go blue in 2016. Unfortunately for Democrats, that prediction was incorrect.  </p>
+
+
+    <h4>Pennsylvania in 2016</h4>
+    <div id="PA-county-map-2016"></div>
+
+    <br>
+
+    <h4>Pennsylvania in 2008</h4>
+    <div id="PA-county-map-2008"></div>
+    </div>
+
+    <h4>50% of left-leaning states went red in 2016</h4>
+    <br>
+    <div class="right">
+    	<img class="chart" src="Dem-chart.png"></img>
+    </div>
+    <div class="left">
+                <p>Hillary Clinton won only 11 of Pennsylvania’s 68 counties but, the top 5 most populated counties in Pennsylvania: Philadelphia, Allegheny, Montgomery and Bucks county went Democratic in 2016. Though in 2016, Hillary lost the vote from many Northeast counties that went Democrat in 2008 such as Cambria, Carbon, Luzerne, Northampton counties. </p>
+                <p>50 percent of the states that lean Democrat went Republican in the 2016 presidential election. Michigan, Pennsylvania and Wisconsin went Democrat in both 2012 and 2008, but went red in 2016. Trump narrowly won the Rust Belt states, while Clinton posted a commanding victory in Illinois. The poor economic state and loss of jobs resulted in demographic changes that made the Rust Belt states more inviting territory for Trump.</p>
+                </div>
+     <div class="clear"></div> 
+     <p>A key political question looking to 2018 is whether the Pennsylvania results were the anomaly of an unusual candidate or something that could repeat when two incumbent Democrats — Gov. Tom Wolf and U.S. Senator Bob Casey — are expected to be on the ballot.</p>
+     <p>Given the outcome of the election, voters might hear a lot more about how best to help workers in places like Erie and Luzerne counties. </p>
+
+    <center><h4></h4>
+      <br>
+    	<iframe width="600" height="400" src="http://6abc.com/video/embed/?pid=1598814" frameborder="0" allowfullscreen></iframe>
+      <br><img class="snackable" src="Snackable.png"></img>
+
+    </center>
+
+	</body>
+</html>
